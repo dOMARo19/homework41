@@ -1,12 +1,49 @@
-# React + Vite
+# Homework41
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проект являє собою простий застосунок на React, який демонструє асинхронне завантаження повідомлення та його відображення.
 
-Currently, two official plugins are available:
+## Огляд
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **MessageComponent**: Компонент, який завантажує привітальне повідомлення з затримкою 3 секунди, симулюючи виклик API.
+- **App**: Основний компонент, який містить MessageComponent з базовим стилізуванням.
 
-## Expanding the ESLint configuration
+## Встановлення
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Клонуйте або завантажте репозиторій.
+2. Відкрийте термінал у кореневій папці проекту.
+3. Встановіть залежності за допомогою наступної команди:
+
+   ```bash
+   npm install
+   ```
+
+## Запуск застосунку
+
+Запустіть сервер розробки:
+
+```bash
+npm start
+```
+
+Після запуску серверу відкрийте браузер та перейдіть за адресою [http://localhost:3000](http://localhost:3000) для перегляду застосунку.
+
+## Структура проекту
+
+```
+Homework41/
+├── src/
+│   ├── App.jsx                  // Основний компонент застосунку
+│   └── MessageComponent.jsx     // Компонент, що завантажує та відображає повідомлення
+├── package.json
+└── README.md                    // Цей файл
+```
+
+## Подальші покращення
+
+- Реалізувати обробку помилок під час завантаження повідомлення.
+- Покращити стилізацію за допомогою CSS або UI бібліотеки.
+- Дослідити можливості використання React Suspense з експериментальними можливостями, якщо це потрібно.
+
+## Ліцензія
+
+Цей проект ліцензований за умовами ліцензії MIT.
